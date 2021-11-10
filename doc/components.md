@@ -46,3 +46,27 @@ const foo = {
 ***
 
 ## Tabs:
+Create Tab element.
+
+**Syntax:**
+```
+{
+    tabs: [
+        { tabName: [ string ], dataType: [ string ] },
+        { ... }
+    ]
+}
+```
+
+**Example:**
+```js
+const inboxTabs = {
+    tabs: [
+        { tabName: 'Inbox', dataType: 'Inbox' },
+        { tabName: 'Sended', dataType: 'Sended messages' },
+        { tabName: 'Templates', dataType: 'Template messages' },
+        { tabName: 'Blocked', dataType: 'Blocked users message' },
+        { tabName: 'Trash', dataType: 'Trash' }
+    ]
+};
+```
