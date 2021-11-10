@@ -1,24 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
+import './App.css';
+import Footer from './components/widgets/Footer/Footer';
+import Navigation from './components/widgets/Navigation/Navigation';
+import Authorization from './views/Authorization/Authorization';
+import Gallery from './views/Gallery/Gallery';
+import Homepage from './views/Homepage/Homepage';
+import Inbox from './views/Inbox/Inbox';
+import UserProfile from './views/UserProfile/UserProfile';
+import UserSettings from './views/UserSettings/UserSettings';
+
+const App = () => {
+
+  const logedIn = true;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+          <header>
+            <Navigation />
+          </header>
+
+          <div className="page-content">
+              <Switch>
+                <Route path="/" exact>
+                  
+                  <Homepage />
+                </Route>
+                <Route path="/authorization">
+                  <Authorization />
+                </Route>
+                <Route path="/user-profile">
+                  <UserProfile />
+                </Route>
+                <Route path="/gallery">
+                  <Gallery />
+                </Route>
+                <Route path="/inbox">
+                  <Inbox />
+                </Route>
+                <Route path="/settings">
+                  <UserSettings />
+                </Route>
+              </Switch>
+          </div>
+
+          <Footer />
+      </div>
+    </Router>
   );
 }
 

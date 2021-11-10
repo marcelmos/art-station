@@ -1,0 +1,50 @@
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; /* required */
+  }
+
+nav.navigation{
+    padding: 5px 15px;
+    background: rgb(173,173,173);
+    background: linear-gradient(135deg, rgba(173,173,173,0.3) 0%, rgba(255,255,255,0.3) 35%, rgba(173,173,173,0.3) 100%);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 15px 10px -10px rgb(0, 0, 0, 0.25), -15px -15px 10px -10px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation>div{
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.navigation ul>li{
+    list-style-type: none;
+    margin: 0 5px;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-logo>img{
+    padding-right: 8px;
+}

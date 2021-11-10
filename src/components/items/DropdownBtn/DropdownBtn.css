@@ -1,0 +1,35 @@
+.dropdown-btn__wrapper{
+    overflow-y: visible;
+    max-height: 50px;
+}
+
+.dropdown-btn__wrapper > .dropdown-btn__list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    max-height: 0px;
+    background-color: #d2d2d2;
+    transition: all 0.3s ease-in-out;
+    padding-left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.dropdown-btn__wrapper > .dropdown-btn__list> .dropdown-btn__item{
+    text-align: left;
+    padding: 5px 8px;
+}
+
+.dropdown-btn__wrapper > .dropdown-btn__list > .dropdown-btn__item > a{
+    width: 100%;
+    color: #303030;
+}
+
+.dropdown-btn__wrapper:hover > .dropdown-btn__list{
+    max-height: 99999px;
+}
+
+.dropdown-btn__wrapper img{
+    border-radius: 6px;
+}
