@@ -48,8 +48,10 @@ const UserProfile = () => {
                             <div className="col">
                                 <h3>Gallery</h3>
                             </div>
-                            <div className="col">
+                            <div className="col horizontal">
+                                {/* FUTURE CONTENT AUTO IMPLEMENTATION */}
                                 <Tabs tabsData={galleryTabs} />
+                                <button className="btn center-self mt-20 width-50">See more</button>
                             </div>
                         </div>
                     </section>
@@ -57,9 +59,13 @@ const UserProfile = () => {
                     <section>
                         <div className="row row-vertical">
                             <div className="col">
-                                <h3>Favourites</h3>  
+                                <h3>Favourites</h3>
                             </div>
-                            <div className="col"></div>
+                            <div className="col horizontal">
+                                {/* FUTURE CONTENT AUTO IMPLEMENTATION */}
+                                Test
+                                <button className="btn center-self mt-20 width-50">See more</button>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -69,7 +75,7 @@ const UserProfile = () => {
                         <div className="row row-vertical">
 
                             <div className="col">
-                                <h3>Stats</h3>  
+                                <h3>Stats</h3>
                             </div>
 
                             <div className="col">
