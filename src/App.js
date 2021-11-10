@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css';
+import './ElementsStyles.css';
 import Footer from './components/widgets/Footer/Footer';
 import Navigation from './components/widgets/Navigation/Navigation';
 import Authorization from './views/Authorization/Authorization';
@@ -24,7 +25,7 @@ const App = () => {
           <div className="page-content">
               <Switch>
                 <Route path="/" exact>
-                  
+
                   <Homepage />
                 </Route>
                 <Route path="/authorization">
