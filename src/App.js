@@ -10,6 +10,7 @@ import Homepage from './views/Homepage/Homepage';
 import Inbox from './views/Inbox/Inbox';
 import UserProfile from './views/UserProfile/UserProfile';
 import UserSettings from './views/UserSettings/UserSettings';
+import QuickChat from './components/widgets/QuickChat/QuickChat';
 
 const App = () => {
 
@@ -44,6 +45,8 @@ const App = () => {
                   <UserSettings />
                 </Route>
               </Switch>
+
+              <QuickChat />
           </div>
 
           <Footer />
