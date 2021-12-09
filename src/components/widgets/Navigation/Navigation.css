@@ -17,7 +17,9 @@ nav.navigation{
     display: flex;
     justify-content: space-between;
 }
-
+.test{
+    columns: 1;
+}
 .navigation a{
     color: #fff;
     text-decoration: none;
