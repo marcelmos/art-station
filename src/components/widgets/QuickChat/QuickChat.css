@@ -12,3 +12,13 @@
 .quick-chat__wrapper[data-hidden="true"]{
     transform: translateY(85%);
 }
+
+.quick-chat__top-bar{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:10px;
+    padding: 10px;
+    background-color: black;
+}
