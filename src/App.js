@@ -10,6 +10,8 @@ import Homepage from './views/Homepage/Homepage';
 import Inbox from './views/Inbox/Inbox';
 import UserProfile from './views/UserProfile/UserProfile';
 import UserSettings from './views/UserSettings/UserSettings';
+import Upload from './views/Upload/Upload';
+
 
 const App = () => {
 
@@ -42,6 +44,9 @@ const App = () => {
                 </Route>
                 <Route path="/settings">
                   <UserSettings />
+                </Route>
+                <Route path="/upload">
+                  <Upload />
                 </Route>
               </Switch>
           </div>

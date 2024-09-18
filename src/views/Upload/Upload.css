@@ -1,0 +1,12 @@
+label.radio-input {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+label.radio-input:hover {
+    cursor: pointer;
+}
+label.radio-input>input {
+    max-width: 20px;
+    margin-right: 15px;
+}

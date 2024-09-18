@@ -36,7 +36,7 @@ function Navigation(){
                 </div>
                 <div className="nav-user">
                     <ul>
-                        <li><Link to="">Upload</Link></li>
+                        <li><Link to="/upload">Upload</Link></li>
                         <li><Link to="">Settings</Link></li>
                         <li><DropdownBtn btnData={profileDropdown} /></li>
                     </ul>
